@@ -1,0 +1,84 @@
+# iOS-NOIR Privacy Shield — Quantumult X (圈X) 分流规则
+# 来源: https://github.com/arnold117/iOS-NOIR (Arnold @arnoldchow117)
+# 原文件: shields/ios_noir_shield.conf 与 shields/ios_noir_shield.module（两份内容相同，均为 75 条规则）
+# 转换: DOMAIN-SUFFIX,xxx,REJECT → host-suffix, xxx, reject
+# 用法: 圈X → 设置 → 分流 → 引用（分流）→ 添加，粘贴本文件的 Raw 链接
+# 说明: 拦截三大运营商免密取号网关、数字联盟指纹、JSPatch 后门、行为生物探针与大厂遥测；不影响微信聊天与扫码支付
+# 若某 App 必须用本机号码一键登录时卡住，可临时在圈X里停用本规则
+#
+host-suffix, cmpassport.com, reject
+host-suffix, id6.me, reject
+host-suffix, wostore.cn, reject
+host-suffix, wosms.cn, reject
+host-suffix, hm.wo.cn, reject
+host-suffix, mdn.open.wo.cn, reject
+host-suffix, open.e.189.cn, reject
+host-suffix, id.189.cn, reject
+host-suffix, shuzilm.cn, reject
+host-suffix, jspatch.com, reject
+host-suffix, mob.com, reject
+host-suffix, miaozhen.com, reject
+host-suffix, admaster.com, reject
+host-suffix, gridsumdissector.com, reject
+host-suffix, cr-nielsen.com, reject
+host-suffix, imrworldwide.com, reject
+host-suffix, tanx.com, reject
+host-suffix, rtbasia.com, reject
+host-suffix, udbac.com, reject
+host-suffix, gentags.net, reject
+host-suffix, tealiumiq.com, reject
+host-suffix, tiqcdn.com, reject
+host-suffix, omtrdc.net, reject
+host-suffix, adobe-campaign.com, reject
+host-suffix, radiumone.io, reject
+host-suffix, pangolin-sdk-toutiao.com, reject
+host-suffix, pangolin-sdk-toutiao-b.com, reject
+host-suffix, pangolin.snssdk.com, reject
+host-suffix, is.snssdk.com, reject
+host-suffix, extlog.snssdk.com, reject
+host-suffix, log.snssdk.com, reject
+host-suffix, toblog.ctobsnssdk.com, reject
+host-suffix, mssdk.bytedance.com, reject
+host-suffix, tobapplog.ctobsnssdk.com, reject
+host-suffix, gdt.qq.com, reject
+host-suffix, e.qq.com, reject
+host-suffix, btrace.qq.com, reject
+host-suffix, oth.eve.mdt.qq.com, reject
+host-suffix, otheve.beacon.qq.com, reject
+host-suffix, tpns.tencent.com, reject
+host-suffix, bugly.qq.com, reject
+host-suffix, rqd.qq.com, reject
+host-suffix, umeng.com, reject
+host-suffix, umengcloud.com, reject
+host-suffix, umsns.com, reject
+host-suffix, alog.umeng.com, reject
+host-suffix, ut.taobao.com, reject
+host-suffix, adash.m.taobao.com, reject
+host-suffix, adashx.m.taobao.com, reject
+host-suffix, adashxgc.ut.taobao.com, reject
+host-suffix, h-adashx.ut.taobao.com, reject
+host-suffix, ynuf.aliapp.org, reject
+host-suffix, log.mmstat.com, reject
+host-suffix, wgo.mmstat.com, reject
+host-suffix, spider-tracker.xiaohongshu.com, reject
+host-suffix, ark.xiaohongshu.com, reject
+host-suffix, ads-img-qc.xhscdn.com, reject
+host-suffix, data.bilibili.com, reject
+host-suffix, cm.bilibili.com, reject
+host-suffix, hl.meituan.com, reject
+host-suffix, analytics.meituan.net, reject
+host-suffix, lx0.meituan.com, reject
+host-suffix, dreport.meituan.net, reject
+host-suffix, t-dsp.pinduoduo.com, reject
+host-suffix, meta.pinduoduo.com, reject
+host-suffix, th.pinduoduo.com, reject
+host-suffix, online-metrix.net, reject
+host-suffix, h.online-metrix.net, reject
+host-suffix, jpush.cn, reject
+host-suffix, jiguang.cn, reject
+host-suffix, getui.com, reject
+host-suffix, igexin.com, reject
+host-suffix, talkingdata.net, reject
+host-suffix, sensorsdata.cn, reject
+host-suffix, growingio.com, reject
+
